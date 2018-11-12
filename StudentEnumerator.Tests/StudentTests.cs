@@ -41,5 +41,16 @@ namespace StudentEnumerator.Tests
 
             Assert.AreEqual(expectedCount, result.Count);
         }
+
+        [TestMethod]
+        public void TestRegisterStudents()
+        {
+            var sr = new StudentRepository();
+            var expectedCount = 2;
+
+            Program.RegisterStudents(sr);
+
+            Assert.AreEqual(expectedCount, sr.GetNumberOfStudents());
+        }
     }
 }

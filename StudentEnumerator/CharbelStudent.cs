@@ -6,18 +6,11 @@ using System.Threading.Tasks;
 
 namespace StudentEnumerator
 {
-    public class Teacher : Person
+    public class CharbelStudent : Person
     {
-        private readonly string _name;
-
-        public Teacher(string name)
-        {
-            _name = name;
-        }
-
         public override string SayGoodmorning()
         {
-            return "God morgon klassen";
+            return "Hallå";
         }
     }
 }
