@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StudentEnumerator
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -22,11 +22,10 @@ namespace StudentEnumerator
             }
         }
 
-        private static void RegisterStudents(StudentRepository repo)
+        public static void RegisterStudents(StudentRepository repo)
         {
             repo.Add(new Teacher("Fredrik"));
-
-
+            repo.Add(new CharbelStudent());
         }
     }
 }
